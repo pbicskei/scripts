@@ -63,4 +63,22 @@ handle_installation() {
         terraform-docs)
             echo "Installing Terraform-Docs..."
             # Include the Terraform-Docs installation script content here
-            # [Insert the Terraform-Docs installati
+            # [Insert the Terraform-Docs installation script from earlier]
+            ;;
+        *)
+            echo "Invalid option!"
+            display_help
+            ;;
+    esac
+}
+
+# Display the banner
+display_banner
+
+# If no arguments are provided, show the help menu
+if [ $# -eq 0 ]; then
+    display_help
+else
+    # Handle the installation based on the provided argument
+    handle_installation $1
+fi
