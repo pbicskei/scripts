@@ -38,7 +38,4 @@ display_banner
 # If no arguments are provided, show the help menu
 if [ $# -eq 0 ]; then
     display_help
-else
-    # Handle the installation based on the provided argument
-    handle_installation $1
 fi
