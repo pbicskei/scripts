@@ -13,19 +13,19 @@ TERRAFORM_DOCS_VERSION="v0.18.0"
 
 # Download terraform-docs binary from GitHub releases
 echo "Downloading terraform-docs..."
-curl -Lo terraform-docs.tar.gz https://github.com/terraform-docs/terraform-docs/releases/download/$TERRAFORM_DOCS_VERSION/terraform-docs-$TERRAFORM_DOCS_VERSION-linux-amd64.tar.gz
+curl -Lo /tmp/terraform-docs.tar.gz https://github.com/terraform-docs/terraform-docs/releases/download/$TERRAFORM_DOCS_VERSION/terraform-docs-$TERRAFORM_DOCS_VERSION-linux-amd64.tar.gz
 
 # Extract the downloaded tar.gz file
 echo "Extracting terraform-docs..."
-tar -xzf terraform-docs.tar.gz
+tar -xzf /tmp/terraform-docs.tar.gz
 
 # Move the binary to /usr/local/bin for system-wide use
 echo "Installing terraform-docs..."
-sudo mv terraform-docs /usr/local/bin/
+sudo mv /tmp/terraform-docs /usr/local/bin/
 
 # Cleanup the tar.gz file
 echo "Cleaning up..."
-rm terraform-docs.tar.gz
+rm /tmp/terraform-docs.tar.gz
 
 # Verify installation
 echo "Verifying terraform-docs installation..."
