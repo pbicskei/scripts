@@ -17,7 +17,7 @@ display_banner() {
 
 # Function to display help menu
 display_help() {
-    echo "Usage: ./help.sh [option]"
+    echo "Usage: web-install help [option]"
     echo ""
     echo "Options:"
     echo "  ansible            Install Ansible on your system."
