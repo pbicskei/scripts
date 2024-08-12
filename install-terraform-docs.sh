@@ -17,7 +17,7 @@ curl -Lo /tmp/terraform-docs.tar.gz https://github.com/terraform-docs/terraform-
 
 # Extract the downloaded tar.gz file
 echo "Extracting terraform-docs..."
-tar -xzf /tmp/terraform-docs.tar.gz
+tar -xzf /tmp/terraform-docs.tar.gz /tmp
 
 # Move the binary to /usr/local/bin for system-wide use
 echo "Installing terraform-docs..."
