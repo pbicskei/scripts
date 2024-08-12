@@ -13,5 +13,5 @@ credentials "app.terraform.io" {
 }
 EOF
 
-chmod 600 ~/.terraformrca
+chmod 600 ~/.terraformrc
 echo ".terraformrc file created with TFE token."
