@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Definieer de versie van Terraform die je wilt installeren
 TERRAFORM_VERSION="1.9.4"
