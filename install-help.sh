@@ -28,7 +28,7 @@ display_help() {
     echo "  help               Display this help message."
     echo ""
     echo "Example:"
-    echo "  ./help.sh ansible"
+    echo "  web-install ansible"
     echo ""
 }
 
